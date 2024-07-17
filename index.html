@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="imageApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Image to Text Description</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lib/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="MainController">
+    <div class="container">
+        <h1>Convertir l'image en texte</h1>
+        <input type="file" file-input="image" />
+        <button ng-click="generateDescription()">Générer la description</button>
+        <div class="output">
+            <h2>Description :</h2>
+            <p>{{ description }}</p>
+        </div>
+    </div>
+</body>
+</html>
